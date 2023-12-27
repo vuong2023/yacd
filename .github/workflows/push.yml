@@ -1,4 +1,4 @@
-name: Deploy
+name: test
 
 on:
   push:
@@ -22,7 +22,7 @@ jobs:
       run: |
         pnpm install --frozen-lockfile
         pnpm build
-    - name: Deploy
+    - name: test
       uses: crazy-max/ghaction-github-pages@v3
       with:
         target_branch: gh-pages
